@@ -35,7 +35,7 @@ public class ManutencaoProfessor extends javax.swing.JDialog {
         jLabel5 = new javax.swing.JLabel();
         jtfNome = new javax.swing.JTextField();
         jtfSobrenome = new javax.swing.JTextField();
-        jtfEndereço = new javax.swing.JTextField();
+        jtfEndereco = new javax.swing.JTextField();
         btnAdicionar = new javax.swing.JButton();
         btnAlterar = new javax.swing.JButton();
         btnExcluir = new javax.swing.JButton();
@@ -54,6 +54,12 @@ public class ManutencaoProfessor extends javax.swing.JDialog {
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Endereço:");
+
+        jtfEndereco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtfEnderecoActionPerformed(evt);
+            }
+        });
 
         btnAdicionar.setText("Adicionar");
         btnAdicionar.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +95,7 @@ public class ManutencaoProfessor extends javax.swing.JDialog {
                                 .addGap(16, 16, 16)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jtfSobrenome, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-                                    .addComponent(jtfEndereço)))))
+                                    .addComponent(jtfEndereco)))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnAdicionar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -116,7 +122,7 @@ public class ManutencaoProfessor extends javax.swing.JDialog {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jtfEndereço, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtfEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAdicionar)
@@ -132,6 +138,10 @@ public class ManutencaoProfessor extends javax.swing.JDialog {
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
 controlador.ControladorProfessor.inserir(this);        // TODO add your handling code here:
     }//GEN-LAST:event_btnAdicionarActionPerformed
+
+    private void jtfEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfEnderecoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfEnderecoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,7 +194,7 @@ controlador.ControladorProfessor.inserir(this);        // TODO add your handling
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    public javax.swing.JTextField jtfEndereço;
+    public javax.swing.JTextField jtfEndereco;
     public javax.swing.JTextField jtfNome;
     public javax.swing.JTextField jtfSobrenome;
     // End of variables declaration//GEN-END:variables
